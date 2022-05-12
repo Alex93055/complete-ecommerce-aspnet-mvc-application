@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using eTickets.Data;
+using eTickets.Data.Base;
 
 namespace eTickets.Models
 {
@@ -12,7 +13,7 @@ namespace eTickets.Models
     /// <summary>
     /// This  class represents the movie class with its properties
     /// </summary>
-    public class Movie
+    public class Movie :IEntityBase
     {
         [Key]
         public int Id { get; set; }
